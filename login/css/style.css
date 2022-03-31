@@ -1,4 +1,5 @@
 body {
+  position: relative;
   background: linear-gradient(94.51deg, #0c1c2e 0.29%, #05101c 100%);
   width: 100%;
   height: 100%;
@@ -10,12 +11,6 @@ body {
   src: url("../assets/font/static/Rubik-Light.ttf") format("opentype");
 }
 
-.logo {
-  position: fixed;
-  margin: auto;
-  margin-top: 164px;
-  width: 18%;
-}
 .login_picture {
   min-width: 200px;
   width: 32%;
@@ -25,8 +20,8 @@ body {
 }
 
 .left_corner {
-  min-width: 250px;
-  height: 42.5%;
+  min-width: 200px;
+  width: 24.37%;
   position: fixed;
   margin-bottom: -8px;
   left: 0;
@@ -49,15 +44,14 @@ body {
 }
 
 .login_form {
-  position: absolute;
   margin-left: 59.16%;
   margin-top: 18.84%;
+  height: 46.5%;
   display: flex;
   flex-direction: column;
   max-width: 350px;
   min-width: 200px;
   width: 18%;
-
   color: #eee;
 }
 .login_form input {
@@ -72,10 +66,41 @@ body {
   font-size: 18px;
 }
 
+.greating {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  align-self: center;
+}
+
+.password,
+.email,
+.stay_logged {
+  font-size: 47%;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
 #password,
 #email {
   height: 1.5rem;
 }
+
+.login_button {
+  width: 12.5vw;
+  background: #ea27c3;
+  color: #eee;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  margin: auto;
+  margin-top: 64px;
+  border: 0px;
+  padding: 0;
+}
+/* custom checkbox > */
 
 .container {
   display: block;
@@ -83,14 +108,14 @@ body {
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 18px;
+  line-height: 30px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-/* custom checkbox */
 .container input {
   position: absolute;
   opacity: 0;
@@ -107,19 +132,16 @@ body {
   width: 25px;
   border: 2px solid yellow;
   border-radius: 5px;
-
 }
 
 .container:hover input ~ .checkmark {
-  border: 2px solid white;
+  border: 3px solid yellow;
   border-radius: 5px;
-
 }
 .container input:checked ~ .checkmark {
   border: 2px solid white;
   border-radius: 5px;
 }
-
 
 .checkmark:after {
   content: "";
@@ -137,9 +159,46 @@ body {
   width: 5px;
   height: 10px;
   border: solid yellow;
-
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+/* < custom checkbox */
+
+@media screen and (max-width: 764px) {
+  .backround {
+    margin-top: 30px;
+    visibility: hidden;
+  }
+  .login_form {
+    margin: auto;
+  }
+  .greating {
+    font-size: 30px;
+  }
+
+  .logo {
+    width: 50vw;
+    margin: auto;
+    top: 60px;
+    position: sticky;
+    visibility: visible;
+  }
+}
+
+@media screen and (min-width: 764px) {
+  .login_form {
+    position: absolute;
+  }
+  .greating {
+    font-size: 48px;
+  }
+
+  .logo {
+    position: fixed;
+    right: 41%;
+    top: 164px;
+    width: 18%;
+  }
 }
