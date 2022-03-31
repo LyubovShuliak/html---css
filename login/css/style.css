@@ -60,7 +60,7 @@ body {
   background-color: transparent;
 }
 
-.login_form label {
+.login_form  {
   color: white;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
@@ -74,11 +74,18 @@ body {
   align-self: center;
 }
 
+.password label,
+.email label {
+  line-height: 48px;
+  font-size: 18px;
+}
+
 .password,
 .email,
 .stay_logged {
   font-size: 47%;
   margin-top: 24px;
+
   display: flex;
   flex-direction: column;
 }
