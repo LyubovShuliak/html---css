@@ -1,13 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <img style="" src="./assets/images/Design.png" alt="" />
+    <div class="backround">
+      <div class="logo"><img src="./assets/images/logo.svg" alt="" /></div>
+      <div class="left_corner">
+        <img src="./assets/images/leftCorner.svg" alt="" />
+      </div>
+      <div class="right_corner">
+        <img src="./assets/images/rightCorner.svg" alt="" />
+      </div>
+      <div class="signup_picture">
+        <img src="./assets/images/signupPage.svg" alt="" />
+      </div>
+    </div>
+    <form class="signup_form">
+      <h1 class="greating">Create account</h1>
+      <div class="email">
+        <label for="email">Email Address</label>
+        <input id="email" name="email" type="email" />
+      </div>
+      <div class="password">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" />
+      </div>
+      <div class="password">
+        <label for="password">Company or organisation name</label>
+        <input id="password" name="password" type="password" />
+      </div>
+      
+      
+      <button class="signup_button">Sign up</button>
+    </form>
   </body>
 </html>
