@@ -11,13 +11,6 @@ body {
   font-family: "Rubik", sans-serif;
   src: url("../assets/font/static/Rubik-Light.ttf") format("opentype");
 }
-.backround {
-  height: 100%;
-  position: absolute;
-}
-.logo {
-  width: 100%;
-}
 
 .left_corner {
   min-width: 200px;

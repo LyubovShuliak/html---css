@@ -1,0 +1,183 @@
+body {
+  position: relative;
+  width: 100%;
+  background-color: #0a1b34;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+/* @font-face {
+  font-family: "Rubik", sans-serif;
+  src: url("../assets/font/static/Rubik-Light.ttf") format("opentype");
+  font-weight: 300;
+} */
+@font-face {
+  font-family: "Rubik", sans-serif;
+  src: url("../assets/font/Rubik/static/Rubik-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Rubik", sans-serif;
+  src: url("../assets/font/Rubik/static/Rubik-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Rubik", sans-serif;
+  src: url("../assets/font/Rubik/static/Rubik-Regular.ttf");
+  font-weight: 400;
+}
+/* rewrite  default props of tag> */
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+input {
+  background-color: transparent;
+  border: 0;
+  color: white;
+}
+input::placeholder {
+  color: white;
+}
+/*< rewrite  default props of tag */
+
+/* top menu */
+.top_menu {
+  box-sizing: content-box;
+  font-family: "Rubik", sans-serif;
+
+  display: flex;
+
+  justify-content: space-between;
+  font-weight: 400;
+  margin-top: 64px;
+  padding-left: 5.68vw;
+
+  padding-right: 8.33vw;
+}
+.logo {
+  width: 13.69vw;
+}
+.logo_picture {
+  width: 100%;
+}
+
+.btn {
+  height: 48px;
+  box-sizing: content-box;
+  font-size: 18px;
+  padding: 8px 8px 8px 8px;
+}
+
+.signup {
+  border: 2px solid #eeff01;
+  border-radius: 5px;
+}
+/* top menu */
+
+/* menu> */
+.navigation {
+  margin-top: 100px;
+  height: 2em;
+  display: flex;
+  justify-content: space-between;
+  background: #0c1c2e;
+
+  padding: 0 8.33vw 0 5.68vw;
+}
+.nav_menu {
+  width: 25.89vw;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+/* <  menu> */
+.content_block {
+  display: flex;
+  padding: 0 8.33vw 0 5.68vw;
+}
+
+.onesignal_menu {
+  width: 17.45%;
+  background: linear-gradient(178.57deg, #0c1c2e 0%, #05101c 100%);
+}
+
+.documentation_container {
+  width: 65.21%;
+  padding-left: 64px;
+}
+
+/* decoration */
+.corner_image {
+  position: absolute;
+  width: 36%;
+  right: 0;
+  bottom: 0;
+}
+/* decoration */
+/* overview */
+.overview_container {
+}
+.overview_blocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+}
+
+.overview_block {
+  width: 27.86vw;
+  border: 2px solid #44ddff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 24px 24px;
+  font-size: 20px;
+}
+.block_name {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+.summary {
+  font-size: 83%;
+  font-weight: 300;
+}
+/* overview */
+
+/* native_sdk_block */
+.sdk_guides_blocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 36px;
+}
+.sdk_block {
+  display: flex;
+  justify-content: center;
+  width: 18.49vw;
+  border: 2px solid #44ddff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+/* native_sdk_block */
+
+/* tutorials{
+   */
+.tutorials_container {
+  display: flex;
+  gap: 36px;
+}
+.tutorial_block {
+  width: 24.48vw;
+  border: 2px solid #44ddff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+/* tutorials{
+   */
