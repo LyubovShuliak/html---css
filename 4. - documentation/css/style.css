@@ -1,10 +1,12 @@
 body {
+  font-family: "Rubik", sans-serif;
   position: relative;
   width: 100%;
   background-color: #0a1b34;
   color: white;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 /* @font-face {
@@ -27,6 +29,12 @@ body {
   src: url("../assets/font/Rubik/static/Rubik-Regular.ttf");
   font-weight: 400;
 }
+
+@font-face {
+  font-family: "Rubik", sans-serif;
+  src: url("../assets/font/Rubik/static/Rubik-Bold.ttf");
+  font-weight: bold;
+}
 /* rewrite  default props of tag> */
 ul {
   margin: 0;
@@ -43,15 +51,14 @@ input {
 input::placeholder {
   color: white;
 }
+h2 {
+  margin: 0;
+}
 /*< rewrite  default props of tag */
 
 /* top menu */
 .top_menu {
-  box-sizing: content-box;
-  font-family: "Rubik", sans-serif;
-
   display: flex;
-
   justify-content: space-between;
   font-weight: 400;
   margin-top: 64px;
@@ -69,7 +76,8 @@ input::placeholder {
 .btn {
   height: 48px;
   box-sizing: content-box;
-  font-size: 18px;
+  max-width: 200px;
+  font-size: 2vmin;
   padding: 8px 8px 8px 8px;
 }
 
@@ -86,32 +94,53 @@ input::placeholder {
   display: flex;
   justify-content: space-between;
   background: #0c1c2e;
-
   padding: 0 8.33vw 0 5.68vw;
 }
 .nav_menu {
+  min-width: 350px;
   width: 25.89vw;
   display: flex;
   justify-content: space-between;
   align-self: center;
+  padding-left: 12px;
 }
 
 /* <  menu> */
 .content_block {
   display: flex;
+  flex-wrap: wrap;
   padding: 0 8.33vw 0 5.68vw;
 }
 
 .onesignal_menu {
   width: 17.45%;
   background: linear-gradient(178.57deg, #0c1c2e 0%, #05101c 100%);
+  /* padding-left: 12px;
+  padding-top: 30px; */
+  padding: 0 12px 30px 12px;
 }
 
 .documentation_container {
   width: 65.21%;
   padding-left: 64px;
 }
-
+.bloks_header {
+  font-size: 3vmin;
+  font-weight: 500;
+}
+.menu_header {
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+.menu_item {
+  font-size: 15px;
+  font-weight: 300;
+  margin: 12px 0 12px 0;
+}
+.menu_item li {
+  padding: 12px 0 12px 0;
+}
 /* decoration */
 .corner_image {
   position: absolute;
@@ -138,12 +167,12 @@ input::placeholder {
   font-size: 20px;
 }
 .block_name {
-  font-family: "Rubik", sans-serif;
+  font-size: 2vmin;
   font-weight: 400;
 }
 
 .summary {
-  font-size: 83%;
+  font-size: 1.67vmin;
   font-weight: 300;
 }
 /* overview */
@@ -175,8 +204,7 @@ input::placeholder {
   width: 24.48vw;
   border: 2px solid #44ddff;
   border-radius: 5px;
-  padding: 10px;
-  font-size: 20px;
+  padding: 2.5vw 3.65vw;
 }
 
 /* tutorials{
