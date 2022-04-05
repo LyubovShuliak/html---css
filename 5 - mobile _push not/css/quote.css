@@ -1,0 +1,41 @@
+.quote_container {
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2vmin;
+  width: 52.08vw;
+  background: linear-gradient(170.91deg, #0c1c2e 0%, #05101c 100%);
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: -1px 20px 117px -12px rgba(68, 221, 255, 0.69);
+  -webkit-box-shadow: -1px 20px 117px -12px rgba(68, 221, 255, 0.69);
+  -moz-box-shadow: -1px 20px 117px -12px rgba(68, 221, 255, 0.69);
+}
+
+.quote_container_circle {
+  width: 4.48vw;
+  height: 4.48vw;
+  margin: 107px 0 36px 0;
+  border-radius: 50%;
+  background-color: rgba(20, 45, 71, 1);
+}
+.quote {
+  width: 76.1%;
+  text-align: center;
+  font-weight: 400;
+}
+.author {
+  margin: 36px 0 36px 0;
+  font-weight: bold;
+}
+.author_position {
+  font-weight: 300;
+}
+
+.read_more {
+  font-weight: 300;
+  margin: 64px 0 107px 0;
+  color: rgba(68, 221, 255, 1);
+}

@@ -1,0 +1,62 @@
+.push_types {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 73.2vw;
+  margin: auto;
+  gap: 3.33vw;
+}
+.push_types_header {
+  width: 100%;
+  text-align: center;
+}
+
+.push_types_list {
+  display: flex;
+  flex-direction: column;
+  width: 15.62vw;
+  gap: 20px;
+}
+
+.push_types_description {
+  width: 23.85vw;
+  font-size: 2vmin;
+  font-weight: 400;
+}
+
+.push_types_list_btn {
+  border-radius: 5px;
+  font-size: 1.5vmin;
+  border: 2px solid #eeff01;
+  text-align: center;
+  vertical-align: middle;
+}
+/* description_block */
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 4.17vmax;
+  margin: auto;
+  margin-top: 10%;
+  gap: 30px;
+}
+
+.start_btn {
+  background: #ea27c3;
+  color: #eee;
+  font-style: normal;
+  line-height: 100%;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.contact_btn {
+  border: 2px solid #eeff01;
+  border-radius: 5px;
+}
+.description_block {
+  margin-top: 150px;
+}

@@ -7,10 +7,16 @@
       block_name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/quote.css" />
+    <link rel="stylesheet" href="./css/start_now.css" />
+    <link rel="stylesheet" href="./css/menu_style.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <title>Document</title>
   </head>
   <body>
+    <!-- menu -->
     <div class="top_menu">
       <div class="logo">
         <img class="logo_picture" src="./assets/images/logo.svg" alt="" />
@@ -18,13 +24,13 @@
       <ul class="nav_menu">
         <li class="posibilities">
           Можливості <img src="./assets/images/extend_menu.svg" alt="" />
-          <ul class="posibilities_menu">
+          <ul class="menu_container">
             <img
               class="triangle"
               src="./assets/images/menu_triangle.svg"
               alt=""
             />
-            <ul class="posibilities_menu_extended">
+            <ul class="menu_extended">
               <li><a href="#">Messaging channels </a></li>
               <li><a href="#">Mobile push </a></li>
               <li><a href="#">Web push </a></li>
@@ -32,7 +38,7 @@
               <li><a href="#">Email </a></li>
               <li><a href="#">SMS </a></li>
             </ul>
-            <ul class="posibilities_menu_extended features">
+            <ul class="menu_extended features">
               <li><a href="#">Features </a></li>
               <li><a href="#">Journeys </a></li>
               <li><a href="#">Personalization </a></li>
@@ -41,7 +47,8 @@
               <li><a href="#">A/B Testing </a></li>
               <li><a href="#">API </a></li>
             </ul>
-            <ul class="posibilities_menu_extended">
+            <div class="devider"></div>
+            <ul class="menu_extended">
               <li><a href="#">Industries </a></li>
               <li><a href="#">Gaming </a></li>
               <li><a href="#">News/Media </a></li>
@@ -50,22 +57,71 @@
             </ul>
           </ul>
         </li>
-
         <li>Ціна</li>
         <li>Документація</li>
-        <li>Ресурси <img src="./assets/images/extend_menu.svg" alt="" /></li>
-        <li>Компанія <img src="./assets/images/extend_menu.svg" alt="" /></li>
+        <li class="resources">
+          Ресурси <img src="./assets/images/extend_menu.svg" alt="" />
+          <ul class="menu_container">
+            <img
+              class="triangle"
+              src="./assets/images/menu_triangle.svg"
+              alt=""
+            />
+            <ul class="menu_extended">
+              <li><a href="#">Resources </a></li>
+              <li><a href="#">Resource Library </a></li>
+              <li><a href="#">Customer Case Studies </a></li>
+              <li><a href="#">How-To Guides </a></li>
+              <li><a href="#">Demo Videos </a></li>
+            </ul>
+
+            <div class="devider"></div>
+            <ul class="menu_extended">
+              <li><a href="#">More </a></li>
+              <li><a href="#">Blog </a></li>
+              <li><a href="#">Notification Preview Tool </a></li>
+              <li><a href="#">Integrations </a></li>
+            </ul>
+          </ul>
+        </li>
+
+        <li class="company">
+          Компанія <img src="./assets/images/extend_menu.svg" alt="" />
+          <ul class="menu_container">
+            <img
+              class="triangle"
+              src="./assets/images/menu_triangle.svg"
+              alt=""
+            />
+            <ul class="menu_extended">
+              <li><a href="#">Company </a></li>
+              <li><a href="#">About Us </a></li>
+              <li><a href="#">Careers </a></li>
+              <li><a href="#">Newsroom</a></li>
+              <li><a href="#">Contact Sales</a></li>
+            </ul>
+
+            <div class="devider"></div>
+            <ul class="menu_extended">
+              <li><a href="#">Partner With Onesignal</a></li>
+              <li><a href="#">Partner Program </a></li>
+              <li><a href="#">Partner Login </a></li>
+            </ul>
+          </ul>
+        </li>
         <li><a class="signin btn">Авторизуватись</a></li>
         <li><a class="signup btn">Зареєструватись</a></li>
       </ul>
     </div>
+    <!-- menu -->
+
     <div class="header_block">
       <div class="header">
         <h1 class="title">Drive App Engagement with Mobile Notifications</h1>
-        <h2 class="subtitle">
+        <p class="subtitle">
           Spark action and nurture loyalty with highly visible, relevant, and
           timely messages.
-        </h2>
+        </p>
         <div class="buttons">
           <a class="start_btn btn">Get Started Now</a>
           <a class="contact_btn btn">Contact Sales</a>
@@ -74,7 +130,61 @@
       <div class="header_image"><img src="" alt="" /></div>
     </div>
 
-    <div class="description_block"></div>
+    <div class="description_block">
+      <div class="push_types">
+        <h2 class="push_types_header">4 Types of Push</h2>
+
+        <div class="push_types_list">
+          <a class="push_types_list_btn btn" href="#">User Messages</a>
+          <a class="push_types_list_btn btn" href="#"
+            >Transactional Notification</a
+          >
+          <a class="push_types_list_btn btn" href="#">Conversion Driver</a>
+          <a class="push_types_list_btn btn" href="#">Promos & Updates</a>
+        </div>
+        <div class="push_types_description">
+          <p>
+            Let someone know when their username is mentioned in a thread or if
+            someone direct messages them through your app.
+          </p>
+        </div>
+
+        <div class="header_image"><img src="" alt="" /></div>
+      </div>
+    </div>
+    <div class="quote_container">
+      <div class="quote_container_circle"></div>
+      <p class="quote">
+        OneSignal's push notifications have been instrumental in helping us to
+        reach our goals. They are quick to implement and use. We use push
+        notifications throughout our user's journey.
+      </p>
+      <p class="author">Tracy Chang</p>
+      <p class="author_position">VP of Digital Marketing</p>
+      <a href="#" class="read_more">Read Case Study</a>
+    </div>
+
+    <div class="start_now_block">
+      <div class="decor_image_start_container">
+        <img
+          class="decor_image_start"
+          src="./assets/images/start_now_picture.svg"
+          alt=""
+        />
+      </div>
+
+      <h1 class="title">Почніть сьогодні безкоштовно з нашим інструментом</h1>
+      <h2 class="subtitle">Ми доставимо вас за лічені хвилини.</h2>
+      <div class="buttons">
+        <div class="start_btn btn"><a href="#">Почати зараз</a></div>
+        <div class="contact_btn btn">
+          <a href="#"> Зв'язатися з відділом продажу</a>
+        </div>
+      </div>
+      <p class="contact_us">
+        Є питання? <a href="#">Поспілкуйтеся з експертом.</a>
+      </p>
+    </div>
 
     <div class="footer_container">
       <div class="background">
@@ -97,7 +207,6 @@
         </div>
         <div class="footer_content_block">
           <p class="footer_content_block_header">Ресурси</p>
-
           <ul class="footer_content_block_list">
             <li>Бібліотека ресурсів</li>
             <li>Клієнти</li>
@@ -150,6 +259,5 @@
         </div>
       </div>
     </div>
-    <script src="./script.js"></script>
   </body>
 </html>

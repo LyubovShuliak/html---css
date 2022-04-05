@@ -144,7 +144,7 @@ h2 {
 /* decoration */
 .corner_image {
   position: absolute;
-  width: 36%;
+  width: 36vw;
   right: 0;
   bottom: 0;
 }
@@ -209,3 +209,17 @@ h2 {
 
 /* tutorials{
    */
+.questions_block {
+  height: 22.24vw;
+  margin-top: 64px;
+
+  display: flex;
+  flex-direction: column;
+  padding: 1.6% 0 1% 0;
+}
+.questions_block_subtitle {
+  font-size: 1.2em;
+}
+.questions_block p a {
+  color: #44ddff;
+}
