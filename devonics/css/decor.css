@@ -1,0 +1,25 @@
+.clipped {
+  clip-path: url(#my-clip-path);
+  width: 102%;
+
+  height: 600px;
+  background-color: rgb(19, 21, 21);
+
+  margin: auto;
+  filter: drop-shadow(5px 5px 35px 10px #44ddff);
+}
+
+.svg {
+  position: absolute;
+  width: 100vw;
+  height: 0;
+}
+
+.dsd {
+  position: relative;
+  width: 100vw;
+
+  /* clip-path: polygon(10% 10%, 90% 10%, 90% 90%, 10% 90%); */
+
+  filter: drop-shadow(-5px 3px 39px rgba(68, 221, 255, 1));
+}

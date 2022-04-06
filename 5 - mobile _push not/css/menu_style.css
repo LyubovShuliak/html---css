@@ -33,12 +33,15 @@
 
 .nav_menu li {
   cursor: pointer;
+  justify-content: center;
+  align-content: center;
+}
+
+.nav_menu li a img {
+  padding-left: 10px;
 }
 .posibilities {
   position: relative;
-}
-.posibilities {
-  padding-bottom: 30px;
 }
 
 .posibilities:hover > .menu_container {

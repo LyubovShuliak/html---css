@@ -1,0 +1,20 @@
+@import url("./global.css");
+
+.learn_more_block {
+  display: flex;
+  flex-direction: column;
+  width: 37.5vw;
+  margin: auto;
+  font-size: 2vmin;
+  gap: 64px;
+  align-items: center;
+}
+
+.learn_more_block p {
+  font-weight: 400;
+  text-align: center;
+}
+.learn_more_block a {
+  font-weight: 300;
+  color: rgba(68, 221, 255, 1);
+}
