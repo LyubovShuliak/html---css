@@ -1,0 +1,58 @@
+.article_preview_block::after {
+  content: url("../assets/images/decor_right.svg");
+  /* height: auto; */
+
+  position: absolute;
+  right: 0;
+  transform: translate(0, -400px);
+}
+
+.decor_left_web::before {
+  content: url("../assets/images/decor_left.svg");
+  /* height: auto; */
+
+  position: absolute;
+  left: 0;
+  transform: translate(-180px, -500px);
+}
+
+.web::after {
+  content: url("../assets/images/decor_right.svg");
+  height: auto;
+  position: absolute;
+  right: 0;
+  transform: translate(0, 200px);
+  z-index: -1;
+}
+
+.web::before {
+  content: url("../assets/images/decor_left.svg");
+  height: auto;
+  position: absolute;
+  left: 0;
+  transform: translate(0, 600px);
+  width: 20vw;
+  z-index: -1;
+}
+
+.web_push_types::after {
+  content: url("../assets/images/circle_right.svg");
+
+  display: block;
+
+  position: absolute;
+
+  right: 0;
+  z-index: -1;
+  transform: translate(0, -10vh);
+}
+
+.web_push_types::before {
+  content: url("../assets/images/web_push_left_decor.svg");
+  height: auto;
+  position: absolute;
+
+  left: 0;
+  z-index: -1;
+  transform: translate(0, 45vh);
+}

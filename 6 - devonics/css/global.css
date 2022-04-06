@@ -1,0 +1,65 @@
+html {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  position: relative;
+  background-color: #0a1b34;
+  color: white;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Rubik", sans-serif;
+  src: url("../assets/font/Rubik/static/Rubik-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Rubik", sans-serif;
+  src: url("../assets/font/Rubik/static/Rubik-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Rubik", sans-serif;
+  src: url("../assets/font/Rubik/static/Rubik-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Rubik", sans-serif;
+  src: url("../assets/font/Rubik/static/Rubik-Medium.ttf");
+  font-weight: 500;
+}
+/* rewrite  default props of tag> */
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+input {
+  background-color: transparent;
+  border: 0;
+  color: white;
+}
+input::placeholder {
+  color: white;
+}
+h2 {
+  margin: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+/*< rewrite  default props of tag */
