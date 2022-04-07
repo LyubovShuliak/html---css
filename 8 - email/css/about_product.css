@@ -1,0 +1,28 @@
+.about_product {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 67.37vw;
+  margin: auto;
+}
+.about_product_description_title {
+  font-weight: 500;
+  font-size: 4vmin;
+}
+.about_product_description {
+  display: flex;
+  flex-direction: column;
+  font-size: 2vmin;
+  font-weight: 400;
+  gap: 2em;
+  width: 55.02%;
+}
+
+.about_product_description p {
+  width: 90%;
+}
+.about_product_description p a,
+.about_product_description a {
+  color: rgba(68, 221, 255, 1);
+}

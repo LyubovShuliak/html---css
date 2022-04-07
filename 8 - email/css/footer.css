@@ -1,0 +1,37 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  z-index: -1;
+}
+
+.background img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: fill;
+}
+
+.footer_content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 67%;
+  padding: 10% 0 0 20%;
+  justify-content: space-between;
+}
+
+.footer_content_block_list {
+  width: fit-content;
+  max-width: 227px;
+}
+
+.footer_content_block_list li {
+  padding: 10px 0;
+  color: #7b86c0;
+  cursor: pointer;
+}

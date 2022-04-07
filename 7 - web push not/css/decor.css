@@ -37,11 +37,8 @@
 
 .web_push_types::after {
   content: url("../assets/images/circle_right.svg");
-
   display: block;
-
   position: absolute;
-
   right: 0;
   z-index: -1;
   transform: translate(0, -10vh);
@@ -51,7 +48,6 @@
   content: url("../assets/images/web_push_left_decor.svg");
   height: auto;
   position: absolute;
-
   left: 0;
   z-index: -1;
   transform: translate(0, 45vh);
