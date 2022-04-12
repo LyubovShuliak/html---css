@@ -50,16 +50,20 @@ body {
 }
 .right_corner {
   margin-top: -8px;
-
   position: fixed;
   right: 0;
 }
 
 .left_corner img,
 .right_corner img,
-.logo img,
-.login_picture img {
+.logo img {
   width: 100%;
+}
+.logo {
+  position: fixed;
+  right: 41%;
+  top: 150px;
+  width: 18%;
 }
 
 .login_form {
@@ -191,10 +195,3 @@ body {
   transform: rotate(45deg);
 }
 /* < custom checkbox */
-
-.logo {
-  position: fixed;
-  right: 41%;
-  top: 150px;
-  width: 18%;
-}
