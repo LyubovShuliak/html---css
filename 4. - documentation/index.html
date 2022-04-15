@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="../main.css" />
     <title>Document</title>
   </head>
   <body>
@@ -12,9 +12,9 @@
       <div class="docp_logo">
         <img class="docp_logo_picture" src="./assets/images/logo.svg" alt="" />
       </div>
-      <div class="sign_buttons">
-        <a class="signin btn">Авторизуватись</a>
-        <a class="signup btn">Зареєструватись</a>
+      <div class="dp_registration_buttons">
+        <a class="dp_signin dp_btn">Log in</a>
+        <a class="dp_signup dp_btn">Sign up</a>
       </div>
     </div>
     <div class="navigation">
@@ -94,12 +94,14 @@
         <div>
           <h1 class="bloks_header">Documentation</h1>
           <div class="description">
-            <p>Explore our guides and examples to integrate OneSignal.</p>
-            <h3>
+            <p class="description_text">
+              Explore our guides and examples to integrate OneSignal.
+            </p>
+            <h3 class="description_highlited">
               OneSignal is the fastest and most reliable service to send push
               notifications, in-app messages, SMS, and emails.
             </h3>
-            <p>
+            <p class="description_text">
               In our documentation, you can discover resources and training to
               implement OneSignal’s SDKs, learn how to leverage OneSignal’s
               powerful dashboard and API, and find best practices for sending
@@ -158,7 +160,7 @@
         </div>
         <div class="sdk_guides_container">
           <h1 class="bloks_header">SDK Guides</h1>
-          <h3>Native SDKs</h3>
+          <h3 class="sdk_guides_container_subtitle">Native SDKs</h3>
           <div class="sdk_guides_blocks">
             <div class="sdk_block">
               <p class="overview_block_name">Google Android Native</p>
@@ -174,7 +176,7 @@
             </div>
           </div>
 
-          <h3>Cross-Platform SDKs</h3>
+          <h3 class="sdk_guides_container_subtitle">Cross-Platform SDKs</h3>
           <div class="sdk_guides_blocks">
             <div class="sdk_block">
               <p class="overview_block_name">Unity</p>
@@ -226,12 +228,16 @@
           <p class="questions_block_subtitle">
             If you have any questions, feel free to drop us a line!
           </p>
-          <p>Email us at<a href="#"> support@devonics.com</a></p>
-          <p><a href="#">Chat directly</a> with support.</p>
+          <p class="questions_block_text">
+            Email us at<a href="#"> support@devonics.com</a>
+          </p>
+          <p class="questions_block_text">
+            <a href="#">Chat directly</a> with support.
+          </p>
         </div>
       </div>
     </div>
 
-    <img class="corner_image" src="./assets/images/corner.svg" alt="" />
+    <div class="corner_image"></div>
   </body>
 </html>
