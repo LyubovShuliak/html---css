@@ -4221,6 +4221,7 @@ video::-webkit-media-controls-play-button {
   align-items: center;
   text-align: center;
   gap: var(--gap);
+  margin-top: 150px;
 }
 .ppp_header_block_title {
   font-family: var(--semibold_font);
