@@ -4168,6 +4168,7 @@ video::-webkit-media-controls-play-button {
   padding-bottom: 150px;
   background-image: url("./assets/images/blur.svg");
   background-position: 50% 80%;
+  background-repeat: no-repeat;
 
   width: 88.12vw;
 }
