@@ -3625,6 +3625,7 @@ p {
   background-image: url("../assets/images/blur.svg");
   background-position: center;
 }
+
 .dp_footer_container {
   margin: auto;
 }
@@ -3646,6 +3647,15 @@ p {
   flex-direction: column;
   gap: 24px;
   line-height: 24px;
+}
+
+.social_media_icons {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 42px;
+  margin-top: 160px;
+  margin-left: 180px;
 }
 
 .video_title {
