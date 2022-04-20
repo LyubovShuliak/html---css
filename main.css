@@ -4743,3 +4743,16 @@ video::-webkit-media-controls-play-button {
   margin-bottom: 64px;
   text-align: center;
 }
+.e-cp_description_block {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  margin: auto;
+  justify-content: center;
+
+  background: url("./assets/images/game_blur.svg"),
+    url("./assets/images/game_blur.svg"), url("./assets/images/game_blur.svg"),
+    url("./assets/images/game_blur.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: center 60px, center 25%, center 45%, center 70%;
+}
