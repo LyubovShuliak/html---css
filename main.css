@@ -88,15 +88,37 @@ h3 {
 .left_corner {
   min-width: 200px;
   position: fixed;
-  margin-bottom: -8px;
+  width: 25%;
+  height: 25vw;
+  bottom: -30%;
   left: 0;
-  bottom: 0;
+  background: linear-gradient(180deg, #ea27c3 0%, #eeff01 100%);
+  transform: rotate(-70.38deg);
+  filter: blur(200px);
 }
 .right_corner {
-  margin-top: -150px;
+  width: 25%;
+  height: 25vw;
   position: fixed;
-  right: 0;
+  right: -10%;
+  top: -30%;
+  background: linear-gradient(180deg, #ea27c3 0%, #eeff01 100%);
+  filter: blur(200px);
+  transform: rotate(-70.38deg);
 }
+
+.conp_left_corner {
+  min-width: 200px;
+  position: fixed;
+  width: 25%;
+  height: 25vw;
+  bottom: -10%;
+  left: 0;
+  background: linear-gradient(180deg, #ea27c3 0%, #eeff01 100%);
+  transform: rotate(-70.38deg);
+  filter: blur(200px);
+}
+
 .con_logo {
   width: 352px;
   margin: auto;
