@@ -3120,7 +3120,8 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 13.44vw;
+  gap: 15px;
+
   justify-content: space-between;
 }
 .dp_btn {
@@ -3131,6 +3132,7 @@ p {
   line-height: 36px;
   justify-content: center;
   transition: all 0.3s ease-in-out;
+  min-width: 100px;
 }
 .dp_signin {
   border-radius: var(--button_border_radius);
@@ -3688,10 +3690,16 @@ p {
 .dp_footer_content {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+
   justify-content: space-between;
+  gap: 30px;
   width: 49.48vw;
   margin: auto;
   font-size: var(--small_font_size);
+}
+.dp_footer_content {
+  min-width: 190px;
 }
 .dp_footer_content_block_header {
   font-family: var(--regular_font);
@@ -3704,16 +3712,27 @@ p {
   gap: 24px;
   line-height: 24px;
 }
-
+.dp_footer_content_block {
+  position: relative;
+}
 .social_media_icons {
-  position: absolute;
   display: flex;
   flex-direction: row;
   gap: 42px;
-  margin-top: 160px;
-  margin-left: 180px;
+}
+@media screen and (max-width: 1440px) {
+  .social_media_icons {
+    margin-top: 30px;
+  }
 }
 
+@media screen and (min-width: 1600px) {
+  .social_media_icons {
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 180px;
+  }
+}
 .video_title {
   font-family: var(--medium_font);
   font-size: var(--block_title_font_size);
