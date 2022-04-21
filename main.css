@@ -36,6 +36,7 @@ body {
 html {
   max-width: 1920px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -2527,6 +2528,7 @@ p {
   box-sizing: border-box;
   min-width: 350px;
   width: 40.25vw;
+  max-width: 768px;
   display: flex;
   justify-content: space-between;
   align-self: center;
@@ -3054,11 +3056,15 @@ p {
 /* top */
 .dp_top_block {
   background-image: url("../assets/images/header_background.svg");
-  padding: 44px 156px 0 244px;
+  padding: 2.2% 8.1% 0 12.71%;
   background-repeat: no-repeat;
 }
 .dp_logo {
   align-self: center;
+  width: 18.28vw;
+}
+.dp_logo_picture {
+  width: 100%;
 }
 
 .dp_header_block {
@@ -3094,12 +3100,14 @@ p {
   border-radius: var(--button_border_radius);
   width: 48.42%;
   transition: all 0.6s ease-in;
+  min-width: 200px;
 }
 
 .dp_start_btn:hover,
 .dp_contact_btn:hover {
   filter: brightness(0.6);
   transition: all 0.6s ease-in;
+  min-width: 100px;
 }
 .dp_contact_btn {
   width: 48.42%;
@@ -3109,6 +3117,7 @@ p {
   box-sizing: border-box;
   border-radius: var(--button_border_radius);
   transition: all 0.6s ease-in;
+  min-width: 200px;
 }
 
 .dp_header_image {
@@ -3138,6 +3147,7 @@ p {
   border-radius: var(--button_border_radius);
   border: var(--pink_border);
   transition: all 0.3s ease-in-out;
+  min-width: 100px;
 }
 .dp_signin:hover {
   color: black;
@@ -3149,6 +3159,7 @@ p {
   background: #eeff01;
   color: black;
   transition: all 0.3s ease-in-out;
+  min-width: 100px;
 }
 .dp_signup:hover {
   background: transparent;
@@ -3167,6 +3178,7 @@ p {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+
   gap: 10px;
   align-self: center;
   font-size: var(--small_font_size);
@@ -3293,9 +3305,10 @@ p {
   margin-top: -10px;
   padding-top: 139px;
   padding-bottom: 139px;
-  background-image: url("../assets/images/description_background.svg");
+  background: url("../assets/images/description_background.svg");
   z-index: 3;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .dp_description_block_title {
   font-family: var(--semibold_font);
@@ -3313,18 +3326,20 @@ p {
   width: 76.82vw;
   margin: auto;
   margin-top: 96px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 64px;
 }
-.dp_learn_about_row_2 {
-  transform: translateX(86px);
+.learn_about_row_2 {
+  margin-left: 86px;
 }
 .dp_learn_about_block {
   display: flex;
   flex-direction: column;
   row-gap: 5px;
-  height: 275px;
+
   width: 21.88vw;
   box-sizing: border-box;
   background: linear-gradient(
@@ -3369,10 +3384,10 @@ p {
 
   z-index: 2;
 }
-.dp_advantages_header::before {
-  content: url("../assets/images/blur.svg");
-  position: absolute;
-  z-index: -1;
+.dp_adventages_back {
+  background: url("../assets/images/blur.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 .dp_advantages_block_title {
@@ -3404,7 +3419,9 @@ p {
 
 /* for_developers */
 .dp_background {
-  background-image: url("../assets/images/for_developers_back.svg");
+  background: url("../assets/images/for_developers_back.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .dp_for_developers {
   padding: 54px 311px;
@@ -3558,10 +3575,14 @@ p {
 /* article_preview_container */
 .dp_article_preview_container {
   width: 88.23vw;
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   margin: auto;
-  row-gap: 120px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 100px;
+  row-gap: 60px;
 }
 .dp_article_preview {
   position: relative;
@@ -3576,8 +3597,7 @@ p {
   cursor: pointer;
 }
 .dp_article_preview_header {
-  grid-row: 1;
-  grid-column: 1 / span 4;
+  width: 100%;
   text-align: center;
   row-gap: 36px;
 }
@@ -3664,7 +3684,8 @@ p {
   flex-direction: row;
   justify-content: space-between;
   gap: 48px;
-  width: 21.51vw;
+  min-width: 21.51vw;
+  width: 450px;
   line-height: 64px;
   text-align: center;
 }
