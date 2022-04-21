@@ -403,7 +403,7 @@ h3 {
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+
   gap: 60px;
   font-weight: 400;
   margin-top: 64px;
@@ -4952,6 +4952,11 @@ video::-webkit-media-controls-play-button {
   background-color: yellow;
   border-radius: var(--button_border_radius);
   height: 64px;
+}
+@media screen and (max-width: 1300px) {
+  .sp_sign_up_social_media_button {
+    width: 100%;
+  }
 }
 a img {
   pointer-events: none;
