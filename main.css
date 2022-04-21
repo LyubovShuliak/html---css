@@ -23,7 +23,6 @@
 }
 
 body {
-  font-family: "Rubik", sans-serif;
   position: relative;
   width: 100%;
   background-color: #0a1b34;
@@ -39,27 +38,6 @@ html {
   overflow-x: hidden;
 }
 
-@font-face {
-  font-family: "Rubik", sans-serif;
-  src: url("../assets/font/Rubik/static/Rubik-Bold.ttf");
-  font-weight: bold;
-}
-@font-face {
-  font-family: "Rubik", sans-serif;
-  src: url("../assets/font/Rubik/static/Rubik-Light.ttf");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Rubik", sans-serif;
-  src: url("../assets/font/Rubik/static/Rubik-Regular.ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Rubik", sans-serif;
-  src: url("../assets/font/Rubik/static/Rubik-Bold.ttf");
-  font-weight: bold;
-}
 /* rewrite  default props of tag> */
 ul {
   margin: 0;
@@ -424,15 +402,34 @@ h3 {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
   font-weight: 400;
   margin-top: 64px;
-  padding-left: 5.68vw;
-  margin-left: calc(241px - 5.68vw);
-
-  padding-right: 8.33vw;
 }
+@media screen and (max-width: 1440px) {
+  .docp_top_menu {
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .docp_top_menu {
+    padding-left: 5.68vw;
+    margin-left: calc(241px - 5.68vw);
+
+    padding-right: 8.33vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .docp_top_menu {
+    padding: 0 30px;
+  }
+}
+
 .docp_logo {
   width: 13.69vw;
+  min-width: 150px;
 }
 .docp_logo_picture {
   width: 100%;
@@ -3000,28 +2997,28 @@ thead tr th {
 
 @font-face {
   font-family: "Poppins-Bold";
-  src: url("../assets/font/Poppins-Bold.ttf") format("truetype");
+  src: url("./assets/font/Poppins-Bold.ttf") format("truetype");
   font-weight: bold;
 }
 @font-face {
   font-family: "Poppins-Light";
-  src: url("../assets/font/Poppins-Light.ttf") format("truetype");
+  src: url("./assets/font/Poppins-Light.ttf") format("truetype");
   font-weight: 300;
 }
 @font-face {
   font-family: "Poppins-Regular";
-  src: url("../assets/font/Poppins-Regular.ttf") format("truetype");
+  src: url("./assets/font/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Poppins-Medium";
-  src: url("../assets/font/Poppins-Medium.ttf") format("truetype");
+  src: url("./assets/font/Poppins-Medium.ttf") format("truetype");
   font-weight: 500;
 }
 @font-face {
   font-family: "Poppins-SemiBold";
-  src: url("../assets/font/Poppins-SemiBold.ttf") format("truetype");
+  src: url("./assets/font/Poppins-SemiBold.ttf") format("truetype");
   font-weight: 600;
 }
 /* rewrite  default props of tag> */
@@ -4795,4 +4792,167 @@ video::-webkit-media-controls-play-button {
     url("./assets/images/game_blur.svg");
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: center 60px, center 25%, center 45%, center 70%;
+}
+.sp_content_back {
+  width: 100%;
+  background: url("./assets/images/blur_sp.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  padding-bottom: 96px;
+}
+
+@media screen and (max-width: 1440px) {
+  .sp_content {
+    width: 80%;
+    min-width: 400px;
+    margin: auto;
+    margin-top: 46px;
+    display: flex;
+    flex-direction: column;
+  }
+  .sp_text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: fit-content;
+    margin: auto;
+    gap: 64px;
+    width: 100%;
+    margin: 0 0 45px;
+  }
+  .sp_crate_acc {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .sp_content {
+    width: 62.5vw;
+
+    margin: auto;
+
+    margin-top: 96px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .sp_text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: fit-content;
+    gap: 64px;
+
+    width: 16vw;
+  }
+}
+.sp_text_block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 200px;
+  max-width: 300px;
+}
+.sp_text_block_title {
+  font-size: var(--subtitle_font_size);
+  font-family: var(--regular_font);
+}
+.sp_text_block_text {
+  font-size: 16px;
+  font-family: var(--light_font);
+}
+
+.sp_create_acc_form {
+  display: flex;
+  flex-direction: column;
+
+  width: 44.79vw;
+  min-width: 400px;
+  margin: auto;
+  border: 2px solid #ea27c3;
+  box-sizing: border-box;
+  border-radius: 22px;
+  padding: 48px;
+}
+.sp_form_title {
+  font-family: var(--light_font);
+  font-size: var(--block_title_font_size);
+  font-weight: 300;
+  margin-bottom: 48px;
+}
+.sp_field {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 58.14%;
+  min-width: 300px;
+  font-size: 18px;
+  font-family: var(--light_font);
+}
+.sp_field + .sp_field {
+  margin-top: 36px;
+}
+.sp_input {
+  width: 100%;
+  height: 51px;
+  border: 2px solid yellow;
+  border-radius: var(--button_border_radius);
+  font-size: 18px;
+  padding-left: 24px;
+}
+.sp_span {
+  font-family: var(--light_font);
+  font-size: 14px;
+  margin: 36px 0;
+}
+.sp_crate_acc {
+  font-family: var(--regular_font);
+  font-size: 20px;
+  background-color: var(--pink);
+  height: 64px;
+  width: 23.25%;
+  min-width: 180px;
+  text-align: center;
+  border-radius: var(--button_border_radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sp_devider {
+  width: 75.35%;
+  text-align: center;
+  font-size: 16px;
+  margin: 36px auto 24px;
+  font-family: var(--regular_font);
+
+  background: url("./assets/images/Line.svg"), url("./assets/images/Line.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left center, right center;
+  background-size: 46.29% 2px, 46.29% 2px;
+}
+.sp_sign_up_social_media {
+  width: 75.35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: auto;
+}
+.sp_sign_up_social_media_button {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  color: black;
+  min-width: 170px;
+  background-color: yellow;
+  border-radius: var(--button_border_radius);
+  height: 64px;
+}
+a img {
+  pointer-events: none;
 }
