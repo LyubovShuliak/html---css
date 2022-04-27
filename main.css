@@ -2759,7 +2759,7 @@ thead tr th {
   font-size: var(--subtitle_font_size);
   padding-bottom: 24px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1023px) {
   .pp_price_table_container {
     min-width: 1000px;
   }
@@ -2796,13 +2796,67 @@ thead tr th {
   .pp_suscribtion_plans {
     min-width: 1400px;
   }
+  .pp_subscriptions {
+    display: none;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .pp_subscriptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .pp_subscriptions {
+    margin-top: 37px;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .pp_subscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .pp_subscription_title {
+    font-family: var(--regular_font);
+    font-size: 14px;
+  }
+  .pp_subscription_subtitle {
+    font-family: var(--light_font);
+    font-size: 12px;
+  }
+  .pp_subscription_button {
+    font-family: var(--regular_font);
+    font-size: 12px;
+    background-color: var(--pink);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    border-radius: 8px;
+    padding: 5px 2px;
+    min-height: 48px;
+  }
 }
 @media screen and (min-width: 1000px) {
   .pp_suscribtion_plans {
     max-width: 900px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .pp_subscriptions {
+    padding: 0 24px;
+    box-sizing: border-box;
+    margin-left: 32%;
+    width: 68%;
+  }
+}
 @media screen and (max-width: 1024px) {
+  .pp_subscriptions div {
+    width: 25%;
+  }
   .pp_top_menu {
     display: none;
   }
@@ -3095,6 +3149,8 @@ thead tr th {
 }
 .pp_questions_block_title {
   font-family: var(--semibold_font);
+
+  text-align: center;
   font-size: 36px;
   font-weight: 600;
   margin: 140px auto 96px;
