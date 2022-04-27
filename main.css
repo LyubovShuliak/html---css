@@ -11,6 +11,7 @@
   --medium_font: "Poppins-Medium";
   --semibold_font: "Poppins-SemiBold";
   --bold_font: "Poppins-Bold";
+  --extralight: "Poppins-ExtraLight";
   --link_color: rgba(68, 221, 255, 1);
   --title_font_size: 64px;
   --block_title_font_size: 36px;
@@ -73,6 +74,11 @@ a {
   font-family: "Poppins-Light";
   src: url("./assets/font/Poppins-Light.ttf") format("truetype");
   font-weight: 300;
+}
+@font-face {
+  font-family: "Poppins-ExtraLight";
+  src: url("./assets/font/Poppins-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
 }
 @font-face {
   font-family: "Poppins-Regular";
@@ -441,6 +447,9 @@ a {
     padding: 0 30px;
   }
   .dp_menu_item {
+    font-size: 14px;
+  }
+  .dp_registration_buttons a {
     font-size: 14px;
   }
 }
@@ -2463,6 +2472,7 @@ a {
   display: flex;
   justify-content: space-between;
   font-weight: 400;
+  gap: 24px;
   margin-top: 64px;
   padding-left: 5.68vw;
   padding-right: 8.33vw;
@@ -2766,9 +2776,6 @@ thead tr th {
   .pp_price_table_mobile {
     display: none;
   }
-  .mobile_top_block {
-    display: none;
-  }
 
   .pp_suscribtion_plans_title {
     font-family: var(--bold_font);
@@ -2853,13 +2860,16 @@ thead tr th {
     width: 68%;
   }
 }
+@media screen and (max-width: 768px) {
+  .pp_top_menu {
+    display: none;
+  }
+}
 @media screen and (max-width: 1024px) {
   .pp_subscriptions div {
     width: 25%;
   }
-  .pp_top_menu {
-    display: none;
-  }
+
   .pp_price_table_container {
     width: 100%;
   }
@@ -3196,6 +3206,7 @@ thead tr th {
   .dp_logo {
     align-self: center;
     width: 10.28vw;
+    min-width: 200px;
   }
 }
 .dp_header_block {
@@ -3345,6 +3356,7 @@ thead tr th {
   display: flex;
   transform: translateX(70%);
   width: 33.96vw;
+  min-width: 500px;
   padding: 26px 31px 45px;
   position: absolute;
   right: 0;
@@ -3401,6 +3413,7 @@ thead tr th {
 .dp_company:hover > .dp_menu_container {
   position: absolute;
   width: 14.43vw;
+  min-width: 200px;
   display: flex;
   flex-direction: column;
   margin-top: 20px;
@@ -3430,6 +3443,144 @@ thead tr th {
   width: 40%;
   margin: 13px;
   padding-left: 30px;
+}
+@media screen and (max-width: 768px) and (min-width: 500px) {
+  .dp_registration_buttons_mobile {
+    font-size: 16px;
+  }
+  .gamburger {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .gamburger > span {
+    width: 100%;
+    height: 2px;
+    background-color: yellow;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .dp_registration_buttons_mobile {
+    font-size: 10px;
+  }
+  .gamburger {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .gamburger > span {
+    width: 100%;
+    height: 2px;
+    background-color: yellow;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mobile_top_visible {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 41px;
+  }
+  .mobile_top_block {
+    display: flex;
+    flex-direction: column;
+    margin: 31px 0;
+  }
+
+  .dp_registration_buttons_mobile {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+  .dp_signup_mobile {
+    background: yellow;
+    border-radius: 11px;
+    color: black;
+    width: 16vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--regular_font);
+    padding: 4px 0;
+  }
+  .dp_signin_mobile {
+    width: 16vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--regular_font);
+    background-color: var(--pink);
+    border-radius: 11px;
+    padding: 4px 0;
+  }
+  .mobile_top_visible_logo {
+    width: 42.93vw;
+    max-width: 200px;
+  }
+  .dp_menu_extend_nav_menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dp_menu_extend_nav_menu li {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+  }
+  .dp_menu_extend_nav_menu li a {
+    padding-left: 20px;
+  }
+
+  .dp_menu_item:not(.not_extended) {
+    margin-top: 24px;
+  }
+  li:not(.mobile_not_extended) + .mobile_not_extended {
+    margin-top: 24px;
+  }
+  .mobile_not_extended + .mobile_not_extended {
+    border-bottom: 2px solid yellow;
+  }
+  .dp_menu_extended_mobile_item {
+    font-size: 12px;
+    font-family: var(--extralight);
+  }
+  .dp_menu_extended_mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    padding-left: 20px;
+  }
+  .mobile_not_extended {
+    border-top: 2px solid yellow;
+    padding: 16px 0;
+  }
+
+  .dp_menu_extended_mobile li {
+    font-family: var(--light_font);
+    font-size: 12px;
+    position: relative;
+    padding-left: 20px;
+    line-height: 24px;
+  }
+  .dp_menu_extended_mobile li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 24px;
+    width: 24px;
+    background-color: white;
+  }
 }
 
 /* top */
@@ -3845,16 +3996,41 @@ thead tr th {
   background-image: url("../assets/images/blur.svg");
   background-position: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .dp_start_now_block_buttons {
     line-height: 64px;
     min-width: 450px;
+  }
+  .mobile_top_block {
+    display: none;
   }
   .pp_questions_block {
     min-width: 600px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 769px) and (max-width: 1080px) {
+  .pp_top_menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 36px;
+    margin-bottom: 64px;
+  }
+  .dp_logo {
+    order: 1;
+  }
+  .dp_registration_buttons {
+    width: 50%;
+    order: 2;
+  }
+  .pp_nav_menu {
+    order: 3;
+    margin: auto;
+  }
+  .pp_nav_menu {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 767px) {
   .dp_start_now_block {
     padding: 16px 0;
     gap: 24px;
