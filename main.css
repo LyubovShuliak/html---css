@@ -64,6 +64,9 @@ a {
   color: white;
   text-decoration: none;
 }
+p {
+  margin: 0;
+}
 .not_visible {
   display: none;
 }
@@ -504,10 +507,9 @@ a {
   padding: 0 8.33vw 0 5.68vw;
 }
 .nav_menu {
-  min-width: 350px;
   width: 25.89vw;
   display: flex;
-  justify-content: space-between;
+
   align-self: center;
   padding-left: 12px;
 }
@@ -515,7 +517,7 @@ a {
 /* <  menu> */
 .content_block {
   display: flex;
-  flex-wrap: wrap;
+
   padding: 0 8.33vw 0 5.68vw;
 }
 
@@ -523,6 +525,7 @@ a {
   width: 17.45%;
   background: linear-gradient(178.57deg, #0c1c2e 0%, #05101c 100%);
   padding: 0 12px 30px 12px;
+  min-width: 300px;
 }
 
 .documentation_container {
@@ -533,6 +536,11 @@ a {
   font-family: var(--medium_font);
   font-size: 32px;
   padding-top: 48px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
 }
 .description_text {
   font-family: var(--light_font);
@@ -561,6 +569,7 @@ a {
 .onesignal_menu_menu_item li {
   padding: 12px 0 12px 0;
 }
+
 /* decoration */
 .corner_image {
   position: absolute;
@@ -577,16 +586,19 @@ a {
 /* overview */
 
 .overview_blocks {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
   gap: 36px;
+  width: 100%;
 }
 
 .overview_block {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 27.86vw;
+
   border: 2px solid #44ddff;
   box-sizing: border-box;
   border-radius: 5px;
@@ -606,18 +618,20 @@ a {
 
 /* native_sdk_block */
 .sdk_guides_blocks {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 36px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .sdk_block {
   display: flex;
   justify-content: center;
-  width: 18.49vw;
+  width: 17.44vw;
+  min-width: 300px;
   border: 2px solid #44ddff;
   border-radius: 5px;
   box-sizing: border-box;
-  padding: 39px 49px;
+  padding: 39px 0;
 }
 .sdk_guides_container_subtitle {
   font-family: var(--light_font);
@@ -643,23 +657,117 @@ a {
    */
 .tutorials_container {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 36px;
 }
 .tutorial_block {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 24.48vw;
+  width: 30%;
+  min-width: 300px;
   border: 2px solid #44ddff;
   border-radius: 5px;
   padding: 2.5vw 3.65vw;
+}
+@media screen and (max-width: 1080px) {
+  .nav_menu {
+    display: none;
+  }
+  .overview_block {
+    display: grid;
+    grid-template-columns: 84px 1fr;
+    width: 100%;
+  }
+  .overview_block .white_block,
+  .tutorial_block .white_block {
+    grid-row: 1 / span 2;
+  }
+
+  .sdk_block {
+    display: grid;
+    grid-template-columns: 84px 1fr;
+
+    width: 100%;
+  }
+  .tutorial_block {
+    display: grid;
+    grid-template-columns: 84px 1fr;
+
+    width: 100%;
+  }
+  .overview_block_name {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .summary {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .tutorial_block {
+    width: 100%;
+  }
+  .white_block {
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1080px) {
+  .nav_menu_tablet {
+    width: 25.89vw;
+    display: flex;
+    min-width: 350px;
+    align-self: center;
+    padding-left: 12px;
+    gap: 20px;
+  }
+  .description {
+    gap: 16px;
+  }
+  .description_text,
+  .description_highlited {
+    font-size: 18px;
+  }
+  /* .nav_menu_tablet li:last-of-type {
+    margin-left: 20px;
+    display: none;
+  } */
+  .nav_menu_tablet li:nth-of-type(2) {
+    position: relative;
+  }
+  .overview_block_name {
+    font-size: 15px;
+  }
+  .summary {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1081px) {
+  .nav_menu {
+    min-width: 350px;
+    justify-content: space-between;
+  }
+  .nav_menu_tablet {
+    display: none;
+  }
+  .overview_block {
+    width: 48%;
+    min-width: 300px;
+  }
+  .white_block {
+    display: none;
+  }
 }
 
 /* tutorials{
    */
 .questions_block {
-  height: 22.24vw;
   margin-top: 64px;
+  margin-bottom: 64px;
   gap: 24px;
   display: flex;
   flex-direction: column;
@@ -4285,11 +4393,16 @@ thead tr th {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1440px) {
   .social_media_icons {
     position: absolute;
     margin-top: 160px;
     margin-left: 180px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .dp_footer_content {
+    min-width: 1000px;
   }
 }
 .video_title {
@@ -5343,6 +5456,21 @@ video::-webkit-media-controls-play-button {
 }
 
 @media screen and (max-width: 1440px) {
+  .dp_footer_content_block:last-of-type {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .dp_footer_content_block:last-of-type .dp_footer_content_block_list {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .social_media_icons {
+    grid-column: 2;
+    grid-row: 2;
+    bottom: 0;
+    position: absolute;
+  }
   .sp_content {
     width: 80%;
     min-width: 400px;
