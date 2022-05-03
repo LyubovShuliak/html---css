@@ -4784,8 +4784,8 @@ thead tr th {
       linear-gradient(
         0deg,
         rgba(255, 248, 13, 1) 0%,
-        rgba(255, 249, 47, 1) 40%,
-        transparent 40%
+        rgba(255, 249, 47, 1) 38%,
+        transparent 38%
       );
     background-size: 100% 100%, 100% 100%;
     background-repeat: no-repeat, no-repeat;
@@ -4799,9 +4799,10 @@ thead tr th {
     z-index: 10;
   }
   .dp_article_preview_image img {
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
     border-radius: var(--button_border_radius);
-    transform: translate(8%, -10%);
+    transform: translateX(8%);
   }
   .dp_article_preview_descrition {
     height: 153px;
